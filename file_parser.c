@@ -309,7 +309,7 @@ void process_file(const char* path){
             current_idx++;
             current_idx=0;
         }
-    }while (temp_char!=EOF);
+    }while (temp_char!=255);
     fclose(fp);
 }
 

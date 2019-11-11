@@ -6,15 +6,9 @@
 
 int color_matrix[480][640];
 
-
-static int* get_color_matrix(){ 
-    return &color_matrix;
-}
-
 static void draw_cmd(int x1, int y1, int x2, int y2,color_id_t clr_id){
     int i;
-    int color_to_write=0;
-    int* p_matrix=get_color_matrix(); 
+    int color_to_write=0; 
     int k;
     switch (clr_id){
         case RED_CLR:
